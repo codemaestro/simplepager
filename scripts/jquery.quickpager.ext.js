@@ -1,9 +1,9 @@
 /**
 * jquery.quickPagerExt.ext.js v1.2
 * Based on Quick Pager jquery plugin 1.1 by Dan Drayne & John V
-* v1.2 Copyright © 2014 Tony Chung
+* v1.2 Copyright (c) 2014 Tony Chung
 *      https://github.com/codemaestro/simplepager
-* After © 2011 Daniel Drayne and John V
+* After (c) 2011 Daniel Drayne and John V
 *      https://github.com/dan0/simplepager
 * jQuery lightweight plugin boilerplate by Adam J. Sontag, from Addy Osmani article 
 *      http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
