@@ -8,12 +8,14 @@ jQuery lightweight plugin boilerplate by Adam J. Sontag, from Addy Osmani articl
 * http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
 
 
-This project includes Daniel Drayne's original quickPager plugin to show the
-lightweight and versatile system he built for jQuery 1.3.1.
+This project includes Daniel Drayne's original quickPager plugin
+to show the lightweight and versatile system he built
+for jQuery 1.3.1.
 
-Three years later, I found the quickPager plugin for a recent project. As usual,
-the client's needs became increasingly more complex, so I added extra features, to
-the point where the plugin no longer qualifies as "lightweight". (Sorry Dan!)
+Three years later, I found the quickPager plugin for a recent
+project. As usual, the client's needs became increasingly more
+complex, so I added extra features, to the point where the plugin
+no longer qualifies as "lightweight". (Sorry Dan!)
 
 View the demos for usage descriptions and sample code.
 
