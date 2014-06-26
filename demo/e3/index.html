@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>quickPager extended - jQuery paging plugin - Demo page 3</title>
+<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/jquery.quickpager.ext.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function() {
+	$("ul.paging").quickPagerExt({
+		pagerLocation: 'both',
+		_hidden: null,
+		holder: '.pagenav',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;',
+		_selectorlabel: 'Page size',
+		_selectorall: 'All items'
+	});
+});
+// ]]>
+</script>
+<link href="../styles/demo.css" rel="stylesheet" type="text/css"  media="all" />
+</head>
+
+<body>
+	<h1>Quick Pager extended demo page 3</h1>
+	<p>This is just me being creative. All four examples are called from a single instance, some with
+	   pagination holders and some without.</p>
+	<p>The pagination holder containers are named by a CSS class as IDs must be unique.</p>
+	<p><a href="../index.html">back to demos</a></p>
+
+	<code>
+		<pre>
+// me showing off
+	$("ul.paging").quickPagerExt({
+		pagerLocation: 'both',
+		_hidden: null,
+		holder: '.pagenav',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;',
+		_selectorlabel: 'Page size',
+		_selectorall: 'All items'
+	});
+		</pre>
+	</code>
+	
+<h2>First example</h2>
+
+<ul id="demo1" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Second example</h2>
+
+<ul id="demo2" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Third example</h2>
+<code>
+	<pre>
+// See top for JavaScript code sample. This block shows
+// the HTML structure
+
+	&lt;div id="demowrapper"&gt;
+		&lt;div id="demoholder"&gt;
+			&lt;h3&gt;Page navigation&lt;/h3&gt;
+			&lt;!-- page navigation holder called by $('.pagenav') --&gt;
+			&lt;div id="pagenav"&gt;&lt;/div&gt;
+		&lt;/div>
+		&lt;ul id="demo4" class="paging demo3"&gt;
+			[... list of items here ...]
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	</pre>
+</code>
+<div class="demowrapper">
+	<div id="demoholder">
+		<h3>Page navigation</h3>
+		<div class="pagenav"></div>
+	</div>
+	<ul id="demo4" class="paging">
+		<li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	    <li>5</li>
+	    <li>6</li>
+	    <li>7</li>
+	    <li>8</li>
+	    <li>9</li>
+		<li>10</li>
+	    <li>11</li>
+	    <li>12</li>
+	    <li>13</li>
+	    <li>14</li>
+	    <li>15</li>
+	    <li>16</li>
+	    <li>17</li>
+	    <li>18</li>
+	    <li>19</li>
+	    <li>20</li>
+	    <li>21</li>
+	    <li>22</li>
+	    <li>23</li>
+	    <li>24</li>
+		<li>25</li>
+	    <li>26</li>
+	    <li>27</li>
+	    <li>28</li>
+	    <li>29</li>
+	    <li>30</li>
+	    <li>31</li>
+	    <li>32</li>
+	    <li>33</li>
+		<li>34</li>
+	    <li>35</li>
+	    <li>36</li>
+	    <li>37</li>
+	    <li>38</li>
+	    <li>39</li>
+	    <li>40</li>
+	    <li>41</li>
+	    <li>42</li>
+	</ul>
+</div>
+
+<h2>Fourth example</h2>
+<code>
+	<pre>
+// See top for JavaScript code sample. This block shows
+// the HTML structure
+
+	&lt;div id="demowrapper"&gt;
+		&lt;div id="demoholder"&gt;
+			&lt;h3&gt;Page navigation&lt;/h3&gt;
+			&lt;!-- page navigation holder called by $('.pagenav') --&gt;
+			&lt;div id="pagenav"&gt;&lt;/div&gt;
+		&lt;/div>
+		&lt;ul id="demo4" class="paging demo3"&gt;
+			[... list of items here ...]
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	</pre>
+</code>
+
+<div class="demowrapper">
+	<div id="dummydemo">
+		<h3>Page navigation</h3>
+		<div class="pagenav"></div>
+	</div>
+	<ul id="demo3" class="paging">
+		<li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	    <li>5</li>
+	    <li>6</li>
+	    <li>7</li>
+	    <li>8</li>
+	    <li>9</li>
+		<li>10</li>
+	    <li>11</li>
+	    <li>12</li>
+	    <li>13</li>
+	    <li>14</li>
+	    <li>15</li>
+	    <li>16</li>
+	    <li>17</li>
+	    <li>18</li>
+	    <li>19</li>
+	    <li>20</li>
+	    <li>21</li>
+	    <li>22</li>
+	    <li>23</li>
+	    <li>24</li>
+		<li>25</li>
+	    <li>26</li>
+	    <li>27</li>
+	    <li>28</li>
+	    <li>29</li>
+	    <li>30</li>
+	    <li>31</li>
+	    <li>32</li>
+	    <li>33</li>
+		<li>34</li>
+	    <li>35</li>
+	    <li>36</li>
+	    <li>37</li>
+	    <li>38</li>
+	    <li>39</li>
+	    <li>40</li>
+	    <li>41</li>
+	    <li>42</li>
+	</ul>
+</div>
+</body>
+</html>
+

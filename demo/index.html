@@ -1,0 +1,79 @@
+<!DOCTYPE html />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jQuery Quick Pager demos</title>
+<link href="styles/demo.css" rel="stylesheet" type="text/css"  media="all" />
+</head>
+<body>
+<h1>jQuery Quick Pager Demos</h1>
+
+<p>jQuery Quick Pager Extended builds extra features into the lightweight Quick Pager plugin by Daniel Drayne (&copy; 2011). The extended version by Tony Chung is v1.2 (&copy; 2014), based on the v1.1 numbering by John V.</p>
+
+<p>Released under the MIT license.</p>
+
+<h2>Quick Pager Extended</h2>
+<h3>Extended plugin demos</h3>
+<ul>
+	<li><a href="./e1/index.html">Demo 1</a> - Page navigation positioning examples</li>
+	<li><a href="./e2/index.html">Demo 2</a> - Customizable text and class examples</li>
+	<li><a href="./e3/index.html">Demo 3</a> - Opportunity for some pretty creative options</li>
+</ul>
+
+<h3>Background</h3>
+<p>Modified quickPager plugin for use in the <a title="" href="http://vancouver.ca" rel="nofollow" target="_blank">City of Vancouver</a> website. Packaged in the jQuery lightweight plugin boilerplate designed by Adam J. Sontag, from an Addy Osmani <a href="http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/" rel="nofollow" target="_blank">article in Smashing Magazine.</a></p>
+
+<p>Adds the following features:</p>
+<ul>
+	<li>User-selectable pagination values.</li>
+	<li>Customizable UI text and style classes.</li>
+	<li>Smart <em>Previous</em> and <em>Next</em> links.</li>
+	<li>Allow multiple instances from one call, even if <em>holder</em> element is specified.</li>
+</ul>
+
+<p>Note: The same caveats about client-side pagination (especially on slower systems) still apply.</p>
+
+<h3>Run-time parameters</h3>
+<p>This plugin uses parameters for convenience, to prevent errors when updating CSS class names.</p>
+<p>Modify the CSS class names directly in the plugin defaults, or send them at run time when creating an instance.</p>
+<table>
+	<tr><th>Parameter</th><th>Default</th><th>Data Type</th><th>Description of use</th></tr>
+	<tr><td>pageSize</td><td>5</td><td><em>number</em></td><td>Number of items in a page</td></tr>
+	<tr><td>currentPage</td><td>1</td><td><em>number</em></td><td>Page to display</td></tr>
+	<tr><td>pagerLocation</td><td>'above'</td><td><em>string</em></td><td>Standard pagination location (customizable)</td></tr>
+	<tr><td>_top</td><td>'above'</td><td><em>string</em></td><td>Name of location <b>above</b> the paginated list</td></tr>
+	<tr><td>_bottom</td><td>'below'</td><td><em>string</em></td><td>Name of location <b>below</b> the paginated list</td></tr>
+	<tr><td>_both</td><td>'both'</td><td><em>string</em></td><td>Name of location for pagination to appear <b>above</b> and <b>below</b> the paginated list</td></tr>  
+	<tr><td>holder</td><td>null</td><td><em>string</em></td><td>CSS selector for custom pagination location</td></tr>
+	<tr><td>pageSelector</td><td>true</td><td><em>boolean</em></td><td>Show the pagination selector</td></tr>
+	<tr><td>_selectorlabel</td><td>'Paginate results'</td><td><em>string</em></td><td>Text to display before page selector</td></tr>
+	<tr><td>_selectoroptions</td><td>'5|10|20|30'</td><td><em>string</em></td><td>Items pagination options</td></tr>
+	<tr><td>_selectorall</td><td>'Show all'</td><td><em>string</em></td><td>Text to display for "Show all" in page selector</td></tr>
+	<tr><td>prev</td><td>'Previous'</td><td><em>string</em></td><td>Text to display for "Previous page"</td></tr>
+	<tr><td>next</td><td>'Next'</td><td><em>string</em></td><td>Text to display for "Next page"</td></tr>
+	<tr><td>_prev</td><td>'prev'</td><td><em>string</em></td><td>CSS class for previous page</td></tr>
+	<tr><td>_next</td><td>'next'</td><td><em>string</em></td><td>CSS class for next page</td></tr>
+	<tr><td>_container</td><td>'pageContainer'</td><td><em>string</em></td><td>CSS class for page items container</td></tr>
+	<tr><td>_pageselector</td><td>'pageSelector'</td><td><em>string</em></td><td>CSS class for pagination option selector</td></tr>
+	<tr><td>_pageoption</td><td>'pageOption'</td><td><em>string</em></td><td>Form field name for pagination option selector</td></tr>
+	<tr><td>_pagelist</td><td>'pageList'</td><td><em>string</em></td><td>CSS class for pagination items</td></tr>
+	<tr><td>_pagenumb</td><td>'pageNumb'</td><td><em>string</em></td><td>CSS class for page numbering prefix applied to paginated list items</td></tr>
+	<tr><td>_pagecurr</td><td>'pageCurr'</td><td><em>string</em></td><td>CSS class for current page in pagination list</td></tr>
+	<tr><td>_hidden</td><td>'hidden'</td><td><em>string</em></td><td>CSS class used to show/hide Prev/Next buttons</td></tr>
+</table>
+
+
+<h2>Quick Pager</h2>
+
+<p>Original demos:</p>
+<ul>
+	<li><a href="./1/index.html">Demo 1</a></li>
+	<li><a href="./2/index.html">Demo 2 (incomplete)</a></li>
+</ul>
+
+<p>Daniel Drayne wrote this lightweight pagination plugin in 2010. For more information:</p>
+<ul>
+	<li><a href="http://www.geckonewmedia.com/blog/2009/08/20/simplepager-jquery-paging-plugin-updated/" rel="nofollow">SimplePager - jQuery paging plugin: Updated</a></li>
+	<li><a href="https://github.com/dan0/simplepager" rel="nofollow">SimplePager/QuickPager - GitHub project</a></li>
+</ul>
+</body>
+</html>

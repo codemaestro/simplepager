@@ -1,0 +1,20 @@
+quickPager(extended) plugin for jQuery
+
+v1.2 Copyright © 2014 Tony Chung
+* https://github.com/codemaestro/simplepager
+After © 2011 Daniel Drayne and John V
+* https://github.com/dan0/simplepager
+jQuery lightweight plugin boilerplate by Adam J. Sontag, from Addy Osmani article 
+* http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
+
+
+This project includes Daniel Drayne's original quickPager plugin to show the
+lightweight and versatile system he built for jQuery 1.3.1.
+
+Three years later, I found the quickPager plugin for for a recent project. As usual,
+the client's needs became increasingly more complex, so I added extra features, to
+the point where the plugin no longer qualifies as "lightweight". (Sorry Dan!)
+
+View the demos for usage descriptions and sample code.
+
+Enjoy!

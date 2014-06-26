@@ -1,0 +1,148 @@
+/* page styles */
+body {
+	margin: 1% 5% 10%;
+	font-family: arial, helvetica, helv, sans-serif;
+}
+h1, h2 {
+	clear: both;
+}
+h2 {
+	border-top: 2px #deddd6 solid;
+	padding-top: .5em;
+	margin-left: -2em;
+	margin-right: -2em;
+	text-indent: 2em;
+}
+code {
+	font-size: 1.1em;
+}
+table {
+	border-collapse: collapse;
+	font-size: .9em;
+}
+table tr th,
+table tr td {
+	border: 1px #deddd6 solid;
+	padding: .25em .5em;
+}
+
+/* demo items */
+ul.paging {
+	clear: both;
+	list-style: none;
+	margin: 0 0 1em; padding: 0;
+}
+ul.paging li {
+    padding: 10px;
+    font-family: arial;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    width: 480px;
+    margin-bottom: 1px;
+}
+#demo1 li {
+    background: #6cb33f;
+}
+#demo2 li {
+    background: #0081c6;
+}
+#demo3 li {
+    background: #d43824;
+}
+#demo4 li {
+	background: #8e68ad;
+}
+.demowrapper {
+	position: relative;
+}
+#demoholder {
+	display: block;
+	position: absolute;
+	height: 0;
+	top: 0;
+	left: 510px;
+}
+#demoholder ul.pageList {
+	clear: left;
+	margin-left: 0;
+}
+#demoholder h3 {
+	margin-top: 0;
+}
+#demoholder p {
+	clear: both;
+}
+
+#dummydemo {
+	position: absolute;
+	top: -46px; left: 490px;
+}
+#dummydemo ul.pageList {
+	float: none;
+	margin: 0;
+	text-align: center;
+}
+#dummydemo ul.pageList li {
+	display: block;
+	float: none;
+	margin: 10px auto;
+	width: auto;
+	text-align: center;
+}
+#dummydemo ul.pageList li a {
+	padding: 3px 10px;
+	width: 24px;
+}
+
+#dummydemo h3, #dummydemo .pageSelector label {
+	display: none;
+}
+
+/* pagination selector dropdown */
+.pageSelector {
+	float: left;
+    margin: 0 0 1em; padding: 0;
+}
+.pageSelector label {
+    font-size: 1em; color: #000;
+}
+.pageSelector select {
+    margin-left: .3em;
+}
+
+/* navigation */
+ul.pageList {
+	float: left;
+	list-style: none;
+	margin: 0 0 .5em 1em; padding: 0;
+}
+ul.pageList li {
+	display: inline;
+	margin: 0 4px 10px 0;
+	float: left;
+	min-width: 24px;
+}
+ul.pageList li a {
+	padding: 3px 8px;
+	font-size: 14px;
+	font-weight: normal;
+	border: 1px solid #ddd;
+	color: #000;
+	background: #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-decoration: none;
+}
+ul.pageList li.pageCurr a,
+ul.pageList li a:hover {
+	color: #000;
+	background: #f0f0f0;
+	border-color: #ccc;
+	text-decoration: none;
+}
+ul.pageList li.hidden {
+	display: none;
+}
+

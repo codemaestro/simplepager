@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>quickPager extended - jQuery paging plugin - Demo page 2</title>
+<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/jquery.quickpager.ext.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function() {
+	$("ul#demo1").quickPagerExt({
+		_hidden: null,
+		_selectorlabel: 'Items per page',
+		_selectorall: 'Everything'
+	});
+	$("ul#demo2").quickPagerExt({
+		_hidden: null,
+		_selectorlabel: 'Items',
+		_selectorall: 'All',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;'
+	});
+	$("ul.demo3").quickPagerExt({
+		pageSize: 4,
+		pagerLocation: 'both',
+		_hidden: null,
+		holder: '#demoholder #pagenav',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;',
+		_selectorlabel: 'Page size',
+		_selectorall: 'All items',
+		_selectoroptions: '4|8|16|24|32|40|44|48'
+	});
+});
+// ]]>
+</script>
+<link href="../styles/demo.css" rel="stylesheet" type="text/css"  media="all" />
+</head>
+
+<body>
+	<h1>Quick Pager extended demo page 2</h1>
+	<p>These examples show how to modify the UI through run-time parameters.</p>
+	<p><a href="../index.html">back to demos</a></p>
+	
+<h2>First example</h2>
+	<code>
+		<pre>
+// Keep prev/next links, change selector text
+
+	$("ul#demo1").quickPagerExt({
+		_hidden: null,
+		_selectorlabel: 'Items per page',
+		_selectorall: 'Everything',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;'
+	});
+		</pre>
+	</code>
+
+<ul id="demo1" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Second example</h2>
+            <code>
+        	<pre>
+// Keep prev/next links, change selector text, change prev/next labels
+
+	$("ul#demo2").quickPagerExt({
+		_hidden: null,
+		_selectorlabel: 'Items',
+		_selectorall: 'All',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;'
+	});
+            </pre>
+        </code>
+<ul id="demo2" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Third example</h2>
+            <code>
+        	<pre>
+// The same options apply to examples 3 and 4:
+// * Multiple instances can result from a single call.
+// * Custom pagination options, modified labels
+// * Plugin called with <b>holder</b> value, which only
+//   applies if the holder is in same container.
+// * Page size dropdown excludes options greater than
+//   quantity of paginated elements
+
+	$("ul.demo3").quickPagerExt({
+		pageSize: 4,
+		pagerLocation: 'both',
+		_hidden: null,
+		holder: '#demoholder #pagenav',
+		next: '&gt;&gt;',
+		prev: '&lt;&lt;',
+		_selectorlabel: 'Page size',
+		_selectorall: 'All items',
+		_selectoroptions: '4|8|16|24|32|40|44|48'
+	});
+            </pre>
+        </code>
+<ul id="demo3" class="paging demo3">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+	<li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li>32</li>
+    <li>33</li>
+	<li>34</li>
+    <li>35</li>
+    <li>36</li>
+    <li>37</li>
+    <li>38</li>
+    <li>39</li>
+    <li>40</li>
+    <li>41</li>
+    <li>42</li>
+</ul>
+
+<h2>Fourth example</h2>
+            <code>
+        	<pre>
+// See above for JavaScript code sample. This block shows
+// the HTML structure
+
+	&lt;div id="demowrapper"&gt;
+		&lt;div id="demoholder"&gt;
+			&lt;h3&gt;Page navigation&lt;/h3&gt;
+			&lt;!-- page navigation holder called by $('#demoholder #pagenav') --&gt;
+			&lt;div id="pagenav"&gt;&lt;/div&gt;
+		&lt;/div>
+		&lt;ul id="demo4" class="paging demo3"&gt;
+			[... list of items here ...]
+		&lt;/ul&gt;
+	&lt;/div&gt;
+
+
+            </pre>
+        </code>
+<div class="demowrapper">
+	<div id="demoholder">
+		<h3>Page navigation</h3>
+		<div id="pagenav"></div>
+	</div>
+	<ul id="demo4" class="paging demo3">
+		<li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	    <li>5</li>
+	    <li>6</li>
+	    <li>7</li>
+	    <li>8</li>
+	    <li>9</li>
+		<li>10</li>
+	    <li>11</li>
+	    <li>12</li>
+	    <li>13</li>
+	    <li>14</li>
+	    <li>15</li>
+	    <li>16</li>
+	    <li>17</li>
+	    <li>18</li>
+	    <li>19</li>
+	    <li>20</li>
+	    <li>21</li>
+	    <li>22</li>
+	    <li>23</li>
+	    <li>24</li>
+		<li>25</li>
+	    <li>26</li>
+	    <li>27</li>
+	    <li>28</li>
+	    <li>29</li>
+	    <li>30</li>
+	    <li>31</li>
+	    <li>32</li>
+	    <li>33</li>
+		<li>34</li>
+	    <li>35</li>
+	    <li>36</li>
+	    <li>37</li>
+	    <li>38</li>
+	    <li>39</li>
+	    <li>40</li>
+	    <li>41</li>
+	    <li>42</li>
+	</ul>
+</div>
+
+</body>
+</html>

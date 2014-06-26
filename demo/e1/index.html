@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>quickPager extended - jQuery paging plugin - Demo page 1</title>
+<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/jquery.quickpager.ext.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function() {
+	$("ul#demo1").quickPagerExt({
+		pagerLocation: 'above'
+	});
+	$("ul#demo2").quickPagerExt({
+		pagerLocation: 'below'
+	});
+	$("ul#demo3").quickPagerExt({
+		pagerLocation: 'both'
+	});
+	$("ul#demo4").quickPagerExt({
+		holder: '#demoholder #pagenav'
+	});
+});
+// ]]>
+</script>
+<link href="../styles/demo.css" rel="stylesheet" type="text/css"  media="all" />
+</head>
+
+<body>
+	<h1>Quick Pager extended demo page 1</h1>
+	<p>These examples show different placement and the default pagination options.</p>
+	<p>In all cases:</p>
+	<ul>
+		<li>Viewing first page hides <b>Prev</b> button.</li>
+		<li>Viewing last page hides <b>Next</b> button.</li>
+		<li>Selecting <b>Show all</b> hides the page navigation.</li>
+	</ul>
+		
+	<p><a href="../index.html">back to demos</a></p>
+	
+<h2>First example</h2>
+	<code>
+		<pre>
+// Pagination above
+	$("ul#demo1").quickPagerExt({
+		pagerLocation: 'above'
+	});
+		</pre>
+	</code>
+
+<ul id="demo1" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Second example</h2>
+            <code>
+        	<pre>
+// Pagination below
+	$("ul#demo2").quickPagerExt({
+		pagerLocation: 'below'
+	});
+            </pre>
+        </code>
+<ul id="demo2" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Third example</h2>
+            <code>
+        	<pre>
+// Pagination above and below
+	$("ul#demo3").quickPagerExt({
+		pagerLocation: 'both'
+	});
+            </pre>
+        </code>
+<ul id="demo3" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+
+<h2>Fourth example</h2>
+            <code>
+        	<pre>
+// Pagination above and below
+	$("ul#demo3").quickPagerExt({
+		holder: '#demoholder #pagnav'
+	});
+            </pre>
+        </code>
+<div id="demowrapper">
+<div id="demoholder">
+	<h3>Page navigation</h3>
+	<div id="pagenav"></div>
+	<p>The page navigation <b>holder</b> can be any element on the page.
+In this layout, the <b>holder</b> is inside a <code>position: absolute</code>
+content block, inside a wrapper <code>position: relative</code>.</p>
+</div>
+<ul id="demo4" class="paging">
+	<li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+	<li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+</ul>
+</div>
+
+</body>
+</html>
